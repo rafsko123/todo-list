@@ -1,0 +1,42 @@
+.page {
+  padding: 36px;
+  .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 100vw;
+    width: 100%;
+    height: 100vh;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 740px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 48px 36px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 36px;
+
+    .wrapper {
+      padding: 36px 24px;
+    }
+  }
+  @media screen and (max-width: 601px) {
+    padding: 0;
+    .bg {
+      display: none;
+    }
+    .wrapper {
+      padding: 36px 18px;
+      border-radius: 0;
+    }
+  }
+}

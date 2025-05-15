@@ -1,0 +1,31 @@
+.container {
+  --select-size: 170px;
+  min-height: 300px;
+  .filters {
+    display: flex;
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--primary-border);
+    .input {
+      width: calc(100% - var(--select-size));
+    }
+    .select {
+      width: var(--select-size);
+    }
+  }
+  @media screen and (max-width: 601px) {
+    .filters {
+      display: flex;
+      flex-direction: column;
+      .input,
+      .select {
+        width: 100% !important;
+        height: 48px;
+        border-radius: 4px !important;
+      }
+      .select {
+        margin-top: 8px;
+      }
+    }
+  }
+}
